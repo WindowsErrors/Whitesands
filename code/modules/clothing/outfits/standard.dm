@@ -162,7 +162,7 @@
 	l_pocket = /obj/item/reagent_containers/food/snacks/grown/banana
 	r_pocket = /obj/item/bikehorn
 	id = /obj/item/card/id
-	l_hand = /obj/item/fireaxe
+	r_hand = /obj/item/fireaxe
 
 /datum/outfit/tunnel_clown/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	if(visualsOnly)
