@@ -363,7 +363,7 @@
 	belt = /obj/item/storage/belt/janitor/full
 	r_pocket = /obj/item/grenade/chem_grenade/cleaner
 	l_pocket = /obj/item/grenade/chem_grenade/cleaner
-	r_hand = /obj/item/storage/bag/trash
+	l_hand = /obj/item/storage/bag/trash
 	backpack_contents = list(/obj/item/storage/box/survival/engineer=1,\
 		/obj/item/storage/box/lights/mixed=1,\
 		/obj/item/mop/advanced=1,\
