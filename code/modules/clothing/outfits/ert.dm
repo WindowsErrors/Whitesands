@@ -192,7 +192,7 @@
 
 /datum/outfit/centcom/ert/commander/inquisitor
 	name = "Inquisition Commander"
-	l_hand = /obj/item/nullrod/scythe/talking/chainsword
+	r_hand = /obj/item/nullrod/scythe/talking/chainsword
 	suit = /obj/item/clothing/suit/space/hardsuit/ert/paranormal
 	backpack_contents = list(/obj/item/storage/box/survival/engineer=1,
 		/obj/item/gun/energy/e_gun=1)
