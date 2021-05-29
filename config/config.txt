@@ -17,7 +17,11 @@ $include atmos_mix.txt
 # There are various options which are hard-locked for security reasons.
 
 ## Server name: This appears at the top of the screen in-game and in the BYOND hub. Uncomment and replace 'White Sands' with the name of your choice.
+<<<<<<< Updated upstream
 # SERVERNAME White Sands
+=======
+SERVERNAME Battlegrounds - Low RP Chaotic Fun for Beginners!
+>>>>>>> Stashed changes
 
 ## Server SQL name: This is the name used to identify the server to the SQL DB, distinct from SERVERNAME as it must be at most 32 characters.
 # SERVERSQLNAME whitesands
@@ -29,7 +33,11 @@ STATIONNAME Space Station 13
 #HUB
 
 ## Lobby time: This is the amount of time between rounds that players have to setup their characters and be ready.
+<<<<<<< Updated upstream
 LOBBY_COUNTDOWN 120
+=======
+LOBBY_COUNTDOWN 200
+>>>>>>> Stashed changes
 
 ## Round End Time: This is the amount of time after the round ends that players have to murder death kill each other.
 ROUND_END_COUNTDOWN 90
@@ -162,7 +170,11 @@ LOG_SHUTTLE
 PICTURE_LOGGING_CAMERA
 
 ## period of time in seconds for players to be considered inactive
+<<<<<<< Updated upstream
 # INACTIVITY_PERIOD 300
+=======
+# INACTIVITY_PERIOD 99999999
+>>>>>>> Stashed changes
 
 ## period of time in seconds for players to be considered afk and kickable
 # AFK_PERIOD 600
@@ -180,13 +192,13 @@ ALLOW_ADMIN_ASAYCOLOR
 ID_CONSOLE_JOBSLOT_DELAY 30
 
 ## allow players to initiate a restart vote
-#ALLOW_VOTE_RESTART
+ALLOW_VOTE_RESTART
 
 ## allow players to initiate a mode-change vote
-#ALLOW_VOTE_MODE
+ALLOW_VOTE_MODE
 
 ## allow players to initiate a map-change vote
-#ALLOW_VOTE_MAP
+ALLOW_VOTE_MAP
 
 ## min delay (deciseconds) between voting sessions (default 10 minutes)
 VOTE_DELAY 6000

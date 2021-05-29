@@ -305,6 +305,42 @@
 	build_path = /obj/item/ammo_box/magazine/co9mm
 	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
 
+/datum/design/a357 //WS edit - sideline lethals
+	name = ".357 Casing"
+	id = "a357"
+	build_type = PROTOLATHE
+	materials = list(/datum/material/iron = 4000)
+	build_path = /obj/item/ammo_casing/a357
+	category = list("Ammo")
+	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
+
+/datum/design/c10mm //WS edit - sideline lethals
+	name = "Ammo Box (10mm)"
+	id = "c10mm"
+	build_type = PROTOLATHE
+	materials = list(/datum/material/iron = 30000)
+	build_path = /obj/item/ammo_box/c10mm
+	category = list("Ammo")
+	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
+
+/datum/design/c45 //WS edit - sideline lethals
+	name = "Ammo Box (.45)"
+	id = "c45"
+	build_type = PROTOLATHE
+	materials = list(/datum/material/iron = 30000)
+	build_path = /obj/item/ammo_box/c45
+	category = list("Ammo")
+	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
+
+/datum/design/c9mm //WS edit - sideline lethals
+	name = "Ammo Box (9mm)"
+	id = "c9mm"
+	build_type = PROTOLATHE
+	materials = list(/datum/material/iron = 30000)
+	build_path = /obj/item/ammo_box/c9mm
+	category = list("Ammo")
+	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
+
 /datum/design/stunshell
 	name = "Stun Shell"
 	desc = "A stunning shell for a shotgun."

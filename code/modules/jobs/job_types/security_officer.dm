@@ -7,8 +7,6 @@
 	spawn_positions = 5 //Handled in /datum/controller/occupations/proc/setup_officer_positions()
 	supervisors = "the head of security, and the head of your assigned department (if applicable)"
 	selection_color = "#ffeeee"
-	minimal_player_age = 7
-	exp_requirements = 300
 	exp_type = EXP_TYPE_CREW
 	wiki_page = "Space_Law" //WS Edit - Wikilinks/Warning
 	special_notice = "Space law is THE law. Follow it." //WS Edit - Wikilinks/Warning

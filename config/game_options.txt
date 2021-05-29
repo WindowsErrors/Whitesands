@@ -48,7 +48,7 @@ WALK_DELAY 3
 ##MULTIPLICATIVE_MOVESPEED /mob/living/carbon/monkey 0
 ##MULTIPLICATIVE_MOVESPEED /mob/living/carbon/alien 0
 ##MULTIPLICATIVE_MOVESPEED /mob/living/simple_animal/slime 0
-MULTIPLICATIVE_MOVESPEED /mob/living/simple_animal 1
+MULTIPLICATIVE_MOVESPEED /mob/living/simple_animal 1.5
 
 
 ## NAMES ###
@@ -85,16 +85,26 @@ ALERT_DELTA Destruction of the station is imminent. All crew are instructed to o
 
 ## GAME MODES ###
 
+<<<<<<< Updated upstream
 ## Uncomment to not send a roundstart intercept report. Gamemodes may override this.
 #NO_INTERCEPT_REPORT
+=======
+## Uncomment to not send a roundstart intercept report. Gamemodes may override this.#
+NO_INTERCEPT_REPORT
+>>>>>>> Stashed changes
 
 ## Probablities for game modes chosen in 'secret' and 'random' modes.
 ## Default probablity is 1, increase to make that mode more likely to be picked.
 ## Set to 0 to disable that mode.
 
 PROBABILITY TRAITOR 5
+<<<<<<< Updated upstream
 PROBABILITY TRAITORBRO 2
 PROBABILITY TRAITORCHAN 3
+=======
+PROBABILITY TRAITORBRO 3
+PROBABILITY TRAITORCHAN 2
+>>>>>>> Stashed changes
 PROBABILITY INTERNAL_AFFAIRS 3
 PROBABILITY NUCLEAR 2
 PROBABILITY REVOLUTION 2
@@ -215,21 +225,25 @@ CHANGELING_SCALING_COEFF 6
 ## Variables calculate how number of open security officer positions will scale to population.
 ## Used as (Officers = Population / Coeff)
 ## Set to 0 to disable scaling and use default numbers instead.
-SECURITY_SCALING_COEFF 8
+SECURITY_SCALING_COEFF 6
 
 ## The number of objectives traitors get.
 ## Not including escaping/hijacking.
-TRAITOR_OBJECTIVES_AMOUNT 2
-BROTHER_OBJECTIVES_AMOUNT 2
+TRAITOR_OBJECTIVES_AMOUNT 0
+BROTHER_OBJECTIVES_AMOUNT 0
 
-## Whether or not Dept heads are valid for traitor selection.
+## Whether or not Dept heads are valid for traitor selection.#
 
-NO_TRAITOR_HEAD CHIEF_MEDICAL_OFFICER
-NO_TRAITOR_HEAD RESEARCH_DIRECTOR
+NO_TRAITOR_HEAD CHIEF_MEDICAL_OFFICER#
+NO_TRAITOR_HEAD RESEARCH_DIRECTOR#
 NO_TRAITOR_HEAD CHIEF_ENGINEER
 
 ## Minimum players joining the round required to create a malfunctioning AI
+<<<<<<< Updated upstream
 TRAITOR_MALF_AI_MIN_POP 10
+=======
+TRAITOR_MALF_AI_MIN_POP 15
+>>>>>>> Stashed changes
 
 ## Uncomment to prohibit jobs that start with loyalty
 ## implants from being most antagonists.
@@ -274,11 +288,19 @@ ALLOW_RANDOM_EVENTS
 
 ## Multiplier for earliest start time of dangerous events.
 ## Set to 0 to make dangerous events avaliable from round start.
+<<<<<<< Updated upstream
 EVENTS_MIN_TIME_MUL 1
 
 ## Multiplier for minimal player count (players = alive non-AFK humans) for dangerous events to start.
 ## Set to 0 to make dangerous events avaliable for all populations.
 EVENTS_MIN_PLAYERS_MUL 1
+=======
+EVENTS_MIN_TIME_MUL 0.5
+
+## Multiplier for minimal player count (players = alive non-AFK humans) for dangerous events to start.
+## Set to 0 to make dangerous events avaliable for all populations.
+EVENTS_MIN_PLAYERS_MUL 0.5
+>>>>>>> Stashed changes
 
 
 ## AI ###
@@ -354,7 +376,7 @@ NEAR_DEATH_EXPERIENCE
 ## If you find that your players are abusing the sandbox panel, this option may slow them down
 ## without preventing people from using it properly.
 ## Only functions in sandbox game mode.
-#SANDBOX_AUTOCLOSE
+SANDBOX_AUTOCLOSE
 
 ## ROUNDSTART SILICON LAWS ###
 ## This controls what the AI's laws are at the start of the round.
@@ -555,7 +577,11 @@ ARRIVALS_SHUTTLE_DOCK_WINDOW 55
 
 ## How many wirechewing rodents you want to spawn on exposed maintenane wires at the start of the round. You may wish to set this to 0 if you're testing powernets.
 
+<<<<<<< Updated upstream
 MICE_ROUNDSTART 10
+=======
+MICE_ROUNDSTART 6
+>>>>>>> Stashed changes
 
 ## If the percentage of players alive (doesn't count conversions) drops below this threshold the emergency shuttle will be forcefully called (provided it can be)
 #EMERGENCY_SHUTTLE_AUTOCALL_THRESHOLD 0.2
@@ -592,7 +618,11 @@ MAXFINE 2000
 ECONOMY
 
 ## Put the name of your custom currency here
+<<<<<<< Updated upstream
 METACURRENCY_NAME Metacoin
+=======
+METACURRENCY_NAME dollar
+>>>>>>> Stashed changes
 
 ## Crew objectives
 ALLOW_CREW_OBJECTIVES
