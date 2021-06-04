@@ -2010,16 +2010,6 @@
 /obj/machinery/computer/secure_data,
 /turf/open/floor/carpet,
 /area/crew_quarters/heads/hos)
-"alA" = (
-/obj/structure/rack,
-/obj/item/gun/ballistic/shotgun/riot{
-	pixel_x = -3;
-	pixel_y = 3
-	},
-/obj/item/gun/ballistic/shotgun/riot,
-/obj/effect/turf_decal/bot,
-/turf/open/floor/plasteel,
-/area/ai_monitored/security/armory)
 "alB" = (
 /obj/machinery/suit_storage_unit/security,
 /turf/open/floor/plasteel,
@@ -2064,16 +2054,6 @@
 	pixel_y = -26;
 	req_access_txt = "3"
 	},
-/turf/open/floor/plasteel,
-/area/ai_monitored/security/armory)
-"alI" = (
-/obj/structure/rack,
-/obj/item/gun/energy/disabler,
-/obj/item/gun/energy/disabler{
-	pixel_x = 3;
-	pixel_y = -3
-	},
-/obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel,
 /area/ai_monitored/security/armory)
 "alJ" = (
@@ -20895,6 +20875,20 @@
 	},
 /turf/open/floor/plasteel/grimy,
 /area/chapel/office)
+"jdD" = (
+/obj/structure/rack,
+/obj/item/gun/ballistic/shotgun/riot{
+	pixel_x = -3;
+	pixel_y = 3
+	},
+/obj/item/gun/ballistic/shotgun/riot,
+/obj/effect/turf_decal/bot,
+/obj/item/gun/ballistic/shotgun/riot{
+	pixel_x = 3;
+	pixel_y = -3
+	},
+/turf/open/floor/plasteel,
+/area/ai_monitored/security/armory)
 "jdJ" = (
 /obj/machinery/vending/wardrobe/jani_wardrobe,
 /turf/open/floor/plasteel,
@@ -22757,6 +22751,20 @@
 	},
 /turf/open/floor/plasteel,
 /area/crew_quarters/bar)
+"kkX" = (
+/obj/effect/turf_decal/bot,
+/obj/structure/rack,
+/obj/item/gun/energy/e_gun{
+	pixel_x = -3;
+	pixel_y = 3
+	},
+/obj/item/gun/energy/e_gun,
+/obj/item/gun/energy/e_gun{
+	pixel_x = 3;
+	pixel_y = -3
+	},
+/turf/open/floor/plasteel,
+/area/ai_monitored/security/armory)
 "klv" = (
 /obj/item/radio/intercom{
 	pixel_x = -28
@@ -27364,13 +27372,6 @@
 	},
 /turf/open/floor/circuit,
 /area/ai_monitored/turret_protected/ai)
-"ntP" = (
-/obj/structure/extinguisher_cabinet{
-	dir = 4;
-	pixel_x = 27
-	},
-/turf/open/floor/plasteel/dark,
-/area/ai_monitored/security/armory)
 "nug" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
 	dir = 4;
@@ -35606,24 +35607,6 @@
 /obj/machinery/atmospherics/miner/carbon_dioxide,
 /turf/open/floor/engine/co2,
 /area/engine/atmos)
-"sOQ" = (
-/obj/effect/turf_decal/bot,
-/obj/structure/rack,
-/obj/item/gun/energy/e_gun{
-	pixel_x = -3;
-	pixel_y = 3
-	},
-/obj/item/gun/energy/e_gun,
-/obj/item/gun/energy/laser{
-	pixel_x = 3;
-	pixel_y = -3
-	},
-/obj/item/gun/energy/laser{
-	pixel_x = 3;
-	pixel_y = -3
-	},
-/turf/open/floor/plasteel,
-/area/ai_monitored/security/armory)
 "sPc" = (
 /obj/machinery/portable_atmospherics/pump,
 /obj/effect/turf_decal/tile/purple{
@@ -36538,6 +36521,20 @@
 	},
 /turf/open/floor/plasteel,
 /area/security/prison)
+"tny" = (
+/obj/structure/rack,
+/obj/item/gun/energy/disabler{
+	pixel_x = 3;
+	pixel_y = -3
+	},
+/obj/item/gun/energy/disabler{
+	pixel_x = -3;
+	pixel_y = 3
+	},
+/obj/effect/turf_decal/bot,
+/obj/item/gun/energy/disabler,
+/turf/open/floor/plasteel,
+/area/ai_monitored/security/armory)
 "tnG" = (
 /obj/item/radio/intercom{
 	pixel_y = 20
@@ -36642,6 +36639,23 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/starboard)
+"tqU" = (
+/obj/structure/extinguisher_cabinet{
+	dir = 4;
+	pixel_x = 27
+	},
+/obj/structure/rack,
+/obj/item/gun/ballistic/automatic/laser{
+	pixel_x = 3;
+	pixel_y = -3
+	},
+/obj/item/gun/ballistic/automatic/laser{
+	pixel_x = -3;
+	pixel_y = 3
+	},
+/obj/item/gun/ballistic/automatic/laser,
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/security/armory)
 "trw" = (
 /obj/machinery/door/airlock/external{
 	name = "Labor Camp Shuttle Airlock";
@@ -68603,12 +68617,12 @@ aaa
 aaa
 alo
 alo
-ntP
+tqU
 lBO
 ald
-alA
-sOQ
-alI
+jdD
+kkX
+tny
 alQ
 hyU
 dDc
