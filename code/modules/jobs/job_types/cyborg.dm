@@ -6,8 +6,6 @@
 	spawn_positions = 1
 	supervisors = "your laws and the AI"	//Nodrak
 	selection_color = "#ddffdd"
-	minimal_player_age = 21
-	exp_requirements = 120
 	exp_type = EXP_TYPE_CREW
 	wiki_page = "Cyborg" //WS Edit - Wikilinks/Warning
 	special_notice = "Your laws take precedence over everything, including space law and past objectives. Do NOT break them." //WS Edit - Wikilinks/Warning

@@ -48,7 +48,7 @@ WALK_DELAY 2
 ##MULTIPLICATIVE_MOVESPEED /mob/living/carbon/monkey 0
 ##MULTIPLICATIVE_MOVESPEED /mob/living/carbon/alien 0
 ##MULTIPLICATIVE_MOVESPEED /mob/living/simple_animal/slime 0
-MULTIPLICATIVE_MOVESPEED /mob/living/simple_animal 1
+MULTIPLICATIVE_MOVESPEED /mob/living/simple_animal 1.5
 
 
 ## NAMES ###
@@ -85,7 +85,7 @@ ALERT_DELTA Destruction of the station is imminent. All crew are instructed to o
 
 ## GAME MODES ###
 
-## Uncomment to not send a roundstart intercept report. Gamemodes may override this.
+## Uncomment to not send a roundstart intercept report. Gamemodes may override this.#
 NO_INTERCEPT_REPORT
 
 ## Probablities for game modes chosen in 'secret' and 'random' modes.
@@ -94,7 +94,7 @@ NO_INTERCEPT_REPORT
 
 PROBABILITY TRAITOR 5
 PROBABILITY TRAITORBRO 3
-PROBABILITY TRAITORCHAN 3
+PROBABILITY TRAITORCHAN 2
 PROBABILITY INTERNAL_AFFAIRS 3
 PROBABILITY NUCLEAR 2
 PROBABILITY REVOLUTION 2
@@ -215,21 +215,21 @@ CHANGELING_SCALING_COEFF 6
 ## Variables calculate how number of open security officer positions will scale to population.
 ## Used as (Officers = Population / Coeff)
 ## Set to 0 to disable scaling and use default numbers instead.
-SECURITY_SCALING_COEFF 8
+SECURITY_SCALING_COEFF 6
 
 ## The number of objectives traitors get.
 ## Not including escaping/hijacking.
-TRAITOR_OBJECTIVES_AMOUNT 2
-BROTHER_OBJECTIVES_AMOUNT 2
+TRAITOR_OBJECTIVES_AMOUNT 3
+BROTHER_OBJECTIVES_AMOUNT 3
 
-## Whether or not Dept heads are valid for traitor selection.
+## Whether or not Dept heads are valid for traitor selection.#
 
-NO_TRAITOR_HEAD CHIEF_MEDICAL_OFFICER
-NO_TRAITOR_HEAD RESEARCH_DIRECTOR
+NO_TRAITOR_HEAD CHIEF_MEDICAL_OFFICER#
+NO_TRAITOR_HEAD RESEARCH_DIRECTOR#
 NO_TRAITOR_HEAD CHIEF_ENGINEER
 
 ## Minimum players joining the round required to create a malfunctioning AI
-TRAITOR_MALF_AI_MIN_POP 20
+TRAITOR_MALF_AI_MIN_POP 15
 
 ## Uncomment to prohibit jobs that start with loyalty
 ## implants from being most antagonists.
@@ -274,11 +274,11 @@ ALLOW_RANDOM_EVENTS
 
 ## Multiplier for earliest start time of dangerous events.
 ## Set to 0 to make dangerous events avaliable from round start.
-EVENTS_MIN_TIME_MUL 0
+EVENTS_MIN_TIME_MUL 0.5
 
 ## Multiplier for minimal player count (players = alive non-AFK humans) for dangerous events to start.
 ## Set to 0 to make dangerous events avaliable for all populations.
-EVENTS_MIN_PLAYERS_MUL 0
+EVENTS_MIN_PLAYERS_MUL 0.5
 
 
 ## AI ###
@@ -354,7 +354,7 @@ NEAR_DEATH_EXPERIENCE
 ## If you find that your players are abusing the sandbox panel, this option may slow them down
 ## without preventing people from using it properly.
 ## Only functions in sandbox game mode.
-#SANDBOX_AUTOCLOSE
+SANDBOX_AUTOCLOSE
 
 ## ROUNDSTART SILICON LAWS ###
 ## This controls what the AI's laws are at the start of the round.
@@ -548,14 +548,14 @@ Space_Budget 26
 ARRIVALS_SHUTTLE_DOCK_WINDOW 55
 
 ## Uncomment to require the arrivals shuttle to be in flight (if it can fly) before late join players can join
-ARRIVALS_SHUTTLE_REQUIRE_UNDOCKED
+#ARRIVALS_SHUTTLE_REQUIRE_UNDOCKED
 
 ## Uncomment to prevent late join players from spawning if the arrivals shuttle is depressurized
 ARRIVALS_SHUTTLE_REQUIRE_SAFE_LATEJOIN
 
 ## How many wirechewing rodents you want to spawn on exposed maintenane wires at the start of the round. You may wish to set this to 0 if you're testing powernets.
 
-MICE_ROUNDSTART 0
+MICE_ROUNDSTART 6
 
 ## If the percentage of players alive (doesn't count conversions) drops below this threshold the emergency shuttle will be forcefully called (provided it can be)
 #EMERGENCY_SHUTTLE_AUTOCALL_THRESHOLD 0.2
@@ -592,22 +592,22 @@ MAXFINE 200000
 ECONOMY
 
 ## Put the name of your custom currency here
-METACURRENCY_NAME dollars
+METACURRENCY_NAME dollar
 
 ## Crew objectives
 ALLOW_CREW_OBJECTIVES
 
 ## Choose which Engine to start the round with. Weight is after the comma. Setting the weight to 0 removes the engine from rotation.
 BOX_RANDOM_ENGINE Box SM,3
-BOX_RANDOM_ENGINE Box Tesla,3
-BOX_RANDOM_ENGINE Box Singulo,3
+BOX_RANDOM_ENGINE Box Tesla,1
+BOX_RANDOM_ENGINE Box Singulo,1
 BOX_RANDOM_ENGINE Box SM 1x3,2
 BOX_RANDOM_ENGINE Box SM 5x5,2
 BOX_RANDOM_ENGINE Box SM 3x,2
 BOX_RANDOM_ENGINE Box TEG,1
 BOX_RANDOM_ENGINE Box Empty,0
-BOX_RANDOM_ENGINE Box Antimatter,2
-BOX_RANDOM_ENGINE Box P.A.C.M.A.N,0
+BOX_RANDOM_ENGINE Box Antimatter,1
+BOX_RANDOM_ENGINE Box P.A.C.M.A.N,1
 
 ## Overmap Settings ##
 

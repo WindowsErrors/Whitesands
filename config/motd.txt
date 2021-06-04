@@ -1,8 +1,6 @@
 <!-- Most valid html will work in here, excluding images. -->
 
-<h1>Welcome to Great Sands Battlegrounds!</h1>
+<h1>Welcome to the Battlegrounds!</h1>
 
-<i>This server is running a White Sands SS13 Git build.</i>
-
-Great Sands Guilded: https://www.guilded.gg/i/WknWP44p
-White Sands Discord: https://discord.gg/BUM8uRc
+<i>This server is running a personalized White Sands SS13 Git build.</i> <p> Remember to check underlined text in this Message Of The Day for useful links! </p> <p> This server is hosted in Oregon (US Pacific). Check the connections of your local <a href="https://www.submarinecablemap.com/">submarine fiber-optic cable landing point</a> to discern good connections with the server. </p> <p> Join the <a href="https://www.guilded.gg/i/WknWP44p">Battlegrounds Guilded</a> for information regarding the server and join the <a href="https://discord.gg/BUM8uRc">
+White Sands Discord</a> for information regarding the code, and talk to WindowsErrors on the Guilded for anything else. </p> <p> Remember to click on the "Mentor" or "Admin" tabs in the top-right and open a Mentor/Adminhelp to ask a question! You can perform a restart, game mode, and map vote by going to the "OOC" tab and opening the Vote menu. </p>

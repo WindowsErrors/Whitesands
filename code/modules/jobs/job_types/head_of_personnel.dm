@@ -9,8 +9,6 @@
 	supervisors = "the captain"
 	selection_color = "#ddddff"
 	req_admin_notify = 1
-	minimal_player_age = 10
-	exp_requirements = 180
 	wiki_page = "Head_of_Personnel" //WS Edit - Wikilinks/Warning
 	exp_type = EXP_TYPE_CREW
 	exp_type_department = EXP_TYPE_SERVICE

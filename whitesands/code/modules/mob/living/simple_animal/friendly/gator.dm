@@ -1,5 +1,5 @@
 /mob/living/simple_animal/hostile/retaliate/gator/steppy
-	name = "Steppy"
+	name = "Maldaris"
 	desc = "Cargo's pet gator. Is he being detained!?"
 	icon = 'whitesands/icons/mob/pets.dmi'
 	icon_state = "steppy"

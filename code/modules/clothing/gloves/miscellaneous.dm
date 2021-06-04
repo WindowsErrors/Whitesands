@@ -147,3 +147,18 @@
 	desc = "These gloves have been enchanted with a spell that makes them electrically insulated and fireproof."
 	icon_state = "wizard"
 	item_state = "purplegloves"
+
+/obj/item/clothing/gloves/color/plasmaman/centcom_commander
+	name = "centcom commander envirogloves"
+	icon_state = "commanderplasma"
+	item_state = "commanderplasma"
+
+/obj/item/clothing/gloves/color/plasmaman/centcom_official
+	name = "centcom official envirogloves"
+	icon_state = "officialplasma"
+	item_state = "officialplasma"
+
+/obj/item/clothing/gloves/color/plasmaman/centcom_intern
+	name = "centcom intern envirogloves"
+	icon_state = "internplasma"
+	item_state = "internplasma"

@@ -6,7 +6,6 @@
 	spawn_positions = 2
 	supervisors = "the research director"
 	selection_color = "#ffeeff"
-	exp_requirements = 60
 	exp_type = EXP_TYPE_CREW
 	wiki_page = "Guide_to_Robotics" //WS Edit - Wikilinks/Warning
 

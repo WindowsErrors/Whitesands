@@ -214,12 +214,36 @@
 
 /datum/outfit/plasmaman/lieutenant //WS edit plasmaman customization
 	name = "Lt. Plasma"
+
 	head = /obj/item/clothing/head/helmet/space/plasmaman/security/lieutenant
 	uniform = /obj/item/clothing/under/plasmaman/lieutenant
 	gloves = /obj/item/clothing/gloves/combat
 
 /datum/outfit/plasmaman/solgov //WS edit sgr
 	name = "Plasmasolgov"
+
 	head = /obj/item/clothing/head/helmet/space/plasmaman/solgov
 	uniform = /obj/item/clothing/under/plasmaman/solgov
 	gloves = /obj/item/clothing/gloves/color/plasmaman/white
+
+/datum/outfit/plasmaman/centcom_commander
+	name = "CentCom Command Plasmaman"
+
+	mask = /obj/item/clothing/mask/gas/sechailer
+	head = /obj/item/clothing/head/helmet/space/plasmaman/centcom_commander
+	uniform = /obj/item/clothing/under/plasmaman/centcom_commander
+	gloves = /obj/item/clothing/gloves/color/plasmaman/centcom_commander
+
+/datum/outfit/plasmaman/centcom_official
+	name = "CentCom Official Plasmaman"
+
+	head = /obj/item/clothing/head/helmet/space/plasmaman/centcom_official
+	uniform = /obj/item/clothing/under/plasmaman/centcom_official
+	gloves = /obj/item/clothing/gloves/color/plasmaman/centcom_official
+
+/datum/outfit/plasmaman/centcom_intern
+	name = "CentCom Intern Plasmaman"
+
+	head = /obj/item/clothing/head/helmet/space/plasmaman/centcom_intern
+	uniform = /obj/item/clothing/under/plasmaman/centcom_intern
+	gloves = /obj/item/clothing/gloves/color/plasmaman/centcom_intern

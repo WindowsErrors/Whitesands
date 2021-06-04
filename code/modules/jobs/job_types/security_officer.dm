@@ -7,8 +7,6 @@
 	spawn_positions = 5 //Handled in /datum/controller/occupations/proc/setup_officer_positions()
 	supervisors = "the head of security, and the head of your assigned department (if applicable)"
 	selection_color = "#ffeeee"
-	minimal_player_age = 7
-	exp_requirements = 300
 	exp_type = EXP_TYPE_CREW
 	wiki_page = "Space_Law" //WS Edit - Wikilinks/Warning
 	special_notice = "Space law is THE law. Follow it." //WS Edit - Wikilinks/Warning
@@ -124,7 +122,7 @@ GLOBAL_LIST_INIT(available_depts, list(SEC_DEPT_ENGINEERING, SEC_DEPT_MEDICAL, S
 	shoes = /obj/item/clothing/shoes/jackboots
 	l_pocket = /obj/item/restraints/handcuffs
 	r_pocket = /obj/item/assembly/flash/handheld
-	suit_store = /obj/item/gun/energy/e_gun/advtaser		//WS edit - Readds tasers
+	suit_store = /obj/item/gun/energy/disabler
 	backpack_contents = list(/obj/item/melee/baton/loaded=1, /obj/item/ammo_box/magazine/co9mm=1) //WS edit - free lethals
 
 	backpack = /obj/item/storage/backpack/security

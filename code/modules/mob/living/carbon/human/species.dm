@@ -30,6 +30,10 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 	///The alpha used by the hair. 255 is completely solid, 0 is invisible.
 	var/hair_alpha = 255
 
+	var/grad_style
+
+	var/grad_color
+
 	///Does the species use skintones or not? As of now only used by humans.
 	var/use_skintones = FALSE
 	///If your race bleeds something other than bog standard blood, change this to reagent id. For example, ethereals bleed liquid electricity.
@@ -560,6 +564,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 
 	if(!hair_hidden || dynamic_hair_suffix)
 		var/mutable_appearance/hair_overlay = mutable_appearance(layer = -HAIR_LAYER)
+		var/mutable_appearance/gradient_overlay = mutable_appearance(layer = -HAIR_LAYER)
 		if(!hair_hidden && !H.getorgan(/obj/item/organ/brain)) //Applies the debrained overlay if there is no brain
 			if(!(NOBLOOD in species_traits))
 				hair_overlay.icon = 'icons/mob/human_face.dmi'
@@ -598,14 +603,28 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 							hair_overlay.color = "#" + hair_color
 					else
 						hair_overlay.color = "#" + H.hair_color
+
+					//Gradients
+					grad_style = H.grad_style
+					grad_color = H.grad_color
+					if(grad_style && grad_style != "None")
+						var/datum/sprite_accessory/gradient = GLOB.hair_gradients_list[grad_style]
+						var/icon/temp = new/icon("icon" = gradient.icon, "icon_state" = gradient.icon_state)
+						var/icon/temp_hair = new/icon("icon" = hair_file, "icon_state" = hair_state)
+						temp.Blend(temp_hair, ICON_ADD)
+						gradient_overlay.icon = temp
+						gradient_overlay.color = "#" + grad_color
+
 				else
 					hair_overlay.color = forced_colour
+
 				hair_overlay.alpha = hair_alpha
 				if(OFFSET_FACE in H.dna.species.offset_features)
 					hair_overlay.pixel_x += H.dna.species.offset_features[OFFSET_FACE][1]
 					hair_overlay.pixel_y += H.dna.species.offset_features[OFFSET_FACE][2]
 		if(hair_overlay.icon)
 			standing += hair_overlay
+			standing += gradient_overlay
 
 	if(standing.len)
 		H.overlays_standing[HAIR_LAYER] = standing
@@ -1549,7 +1568,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 				target.Knockdown(SHOVE_KNOCKDOWN_SOLID)
 				target.forceMove(target_disposal_bin)
 				target.visible_message("<span class='danger'>[user.name] shoves [target.name] into \the [target_disposal_bin]!</span>",
-								"<span class='userdanger'>You're shoved into \the [target_disposal_bin] by [target.name]!</span>", "<span class='hear'>You hear aggressive shuffling followed by a loud thud!</span>", COMBAT_MESSAGE_RANGE, user)
+								"<span class='userdanger'>You're shoved into \the [target_disposal_bin] by [user.name]!</span>", "<span class='hear'>You hear aggressive shuffling followed by a loud thud!</span>", COMBAT_MESSAGE_RANGE, user)
 				to_chat(user, "<span class='danger'>You shove [target.name] into \the [target_disposal_bin]!</span>")
 				log_combat(user, target, "shoved", "into [target_disposal_bin] (disposal bin)")
 		else

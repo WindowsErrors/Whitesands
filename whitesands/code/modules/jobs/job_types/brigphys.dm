@@ -6,8 +6,6 @@
 	spawn_positions = 1
 	supervisors = "the head of security and chief medical officer"
 	selection_color = "#ffeeee"
-	minimal_player_age = 7
-	exp_requirements = 300
 	exp_type = EXP_TYPE_CREW
 	wiki_page = "Guide_to_Medicine" //WS Edit - Wikilinks/Warning
 	special_notice = "You are not a security officer, do not do their job for them. However, you can help them if they need immediate assistance. You are to tend to the medical needs of officers and prisoners." //WS Edit - Wikilinks/Warning

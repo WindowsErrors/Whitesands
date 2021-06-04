@@ -162,7 +162,7 @@
 	l_pocket = /obj/item/reagent_containers/food/snacks/grown/banana
 	r_pocket = /obj/item/bikehorn
 	id = /obj/item/card/id
-	r_hand = /obj/item/fireaxe
+	l_hand = /obj/item/fireaxe
 
 /datum/outfit/tunnel_clown/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	if(visualsOnly)
@@ -370,7 +370,6 @@
 	head = /obj/item/clothing/head/helmet/space/plasmaman
 	uniform = /obj/item/clothing/under/plasmaman
 	r_hand= /obj/item/tank/internals/plasmaman/belt/full
-	mask = /obj/item/clothing/mask/breath
 	gloves = /obj/item/clothing/gloves/color/plasmaman
 
 

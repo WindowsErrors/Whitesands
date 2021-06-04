@@ -1596,7 +1596,6 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 			This will permanently destroy your body, however."
 	item = /obj/item/storage/box/syndie_kit/imp_microbomb
 	cost = 2
-	include_modes = list(/datum/game_mode/nuclear)
 
 /datum/uplink_item/implants/macrobomb
 	name = "Macrobomb Implant"
@@ -1604,7 +1603,6 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 			Upon death, releases a massive explosion that will wipe out everything nearby."
 	item = /obj/item/storage/box/syndie_kit/imp_macrobomb
 	cost = 20
-	include_modes = list(/datum/game_mode/nuclear)
 	restricted = TRUE
 
 /datum/uplink_item/implants/radio
@@ -1913,7 +1911,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	desc = "An implant that grants you a recharging laser gun inside your arm. Weak to EMPs. Comes with a syndicate autosurgeon for immediate self-application."
 	cost = 10
 	item = /obj/item/autosurgeon/syndicate/laser_arm
-	restricted_roles = list("Roboticist")
+	restricted_roles = list("Roboticist", "Research Director")
 
 /datum/uplink_item/role_restricted/ocd_device
 	name = "Organic Resources Disturbance Inducer"

@@ -37,12 +37,7 @@
 				"Warden",
 				"Detective",
 				"Head of Security",
-				"Captain",
-				"Head of Personnel",
-				"Chief Engineer",
-				"Research Director",
-				"Chief Medical Officer"
-			],
+				"Captain"			],
 			"restricted_roles": [
 				"Cyborg"
 			],

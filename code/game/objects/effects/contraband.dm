@@ -429,7 +429,7 @@
 	icon_state = "poster47"
 
 /obj/structure/sign/poster/contraband/steppyflag
-	name = "Steppy Flag"
+	name = "Maldaris Flag"
 	desc = "A poster making a simple statement: \"Fuck around, Find out.\" There's a tiny Cargonia logo in the bottom right."
 	icon_state = "poster48"
 

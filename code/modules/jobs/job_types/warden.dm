@@ -7,8 +7,6 @@
 	spawn_positions = 1
 	supervisors = "the head of security"
 	selection_color = "#ffeeee"
-	minimal_player_age = 7
-	exp_requirements = 300
 	exp_type = EXP_TYPE_CREW
 	wiki_page = "Space_Law" //WS Edit - Wikilinks/Warning
 	special_notice = "You're the Warden, not a Security Officer. Your job is in the brig processing criminals, not patrolling the station." //WS Edit - Wikilinks/Warning
@@ -45,7 +43,7 @@
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
 	r_pocket = /obj/item/assembly/flash/handheld
 	l_pocket = /obj/item/restraints/handcuffs
-	suit_store = /obj/item/gun/energy/e_gun/advtaser		//WS edit - Readds tasers
+	suit_store = /obj/item/gun/energy/disabler
 	backpack_contents = list(/obj/item/melee/baton/loaded=1, /obj/item/ammo_box/magazine/co9mm=1) //WS edit - free lethals
 
 	backpack = /obj/item/storage/backpack/security

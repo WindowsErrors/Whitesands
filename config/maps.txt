@@ -20,13 +20,13 @@ map boxstation
 endmap
 
 map midwaystation
-	#voteweight 1.5
+ minplayers 15
 	votable
 endmap
 
 map metastation
-	minplayers 25
-	#voteweight 0.5
+	minplayers 15
+
 	votable
 endmap
 
@@ -35,22 +35,21 @@ map pubbystation
 endmap
 
 map deltastation
-	minplayers 50
-	votable
+	minplayers 30	votable
 endmap
 
 map kilostation
-	minplayers 25
+	minplayers 15
 	votable
 endmap
 
 map galaxystation
-	maxplayers 25
+	maxplayers 35
 	votable
 endmap
 
 map packedstation
-	maxplayers 30
+	maxplayers 35
 	votable
 endmap
 
